@@ -1,6 +1,6 @@
 {
-  "name": "rithm-patch-b2c-webapp",
-  "description": "Vite React app for the Rithm Patch B2C site",
+  "name": "hormone-harmony",
+  "description": "Hormone Harmony B2C web app (React + Vite)",
   "private": true,
   "version": "0.0.0",
   "type": "module",

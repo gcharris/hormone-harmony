@@ -1,6 +1,6 @@
-# Rithm Patch B2C Web App
+# Hormone Harmony Web App
 
-This is the B2C marketing site for Rithm Patch, built with React + Vite.
+This is the Hormone Harmony B2C web app, built with React + Vite.
 
 ## Local development
 
