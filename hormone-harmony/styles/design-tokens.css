@@ -1,0 +1,432 @@
+/**
+ * Hormone Harmony Design Tokens
+ * Version: 1.0
+ * WCAG 2.1 AA Compliant
+ *
+ * Token-based design system with systematic scales for colors, typography,
+ * spacing, and all other design properties.
+ */
+
+:root {
+  /* ========================================
+     COLOR TOKENS
+     ======================================== */
+
+  /* Primary Palette - Sage Green */
+  --color-primary: #8BA888;
+  --color-primary-hover: #7A9B77;
+  --color-primary-active: #698D66;
+  --color-primary-disabled: #BDD3BB;
+  --color-primary-pale: #E8EFE7;
+  --color-primary-light: #C5D9C4;
+  --color-primary-dark: #5A7058;
+
+  /* Secondary Palette - Coral */
+  --color-secondary: #E8A598;
+  --color-secondary-hover: #E39184;
+  --color-secondary-active: #DD7D70;
+  --color-secondary-disabled: #F4D2CB;
+  --color-secondary-pale: #FDF6F4;
+  --color-secondary-light: #F1C3B9;
+  --color-secondary-dark: #C27A6D;
+
+  /* Accent Palette - Plum */
+  --color-accent: #7B5A7D;
+  --color-accent-hover: #6C4F6E;
+  --color-accent-active: #5D445F;
+  --color-accent-disabled: #BDB0BE;
+  --color-accent-pale: #F0EBF1;
+  --color-accent-light: #9D869E;
+  --color-accent-dark: #4D3A4E;
+
+  /* Neutral Scale - Charcoal Base */
+  --color-charcoal: #0F172A;
+  --color-neutral-50: #F8FAFC;
+  --color-neutral-100: #F1F5F9;
+  --color-neutral-200: #E2E8F0;
+  --color-neutral-300: #CBD5E1;
+  --color-neutral-400: #94A3B8;
+  --color-neutral-500: #64748B;
+  --color-neutral-600: #475569;
+  --color-neutral-700: #334155;
+  --color-neutral-800: #1E293B;
+  --color-neutral-900: #0F172A;
+
+  /* Warm Neutrals */
+  --color-cream: #FAF8F6;
+  --color-cream-dark: #F0EBE6;
+  --color-gray-warm: #6B6560;
+
+  /* Semantic Colors */
+  --color-success: #22C55E;
+  --color-success-bg: #F0FDF4;
+  --color-success-border: #BBF7D0;
+
+  --color-error: #EF4444;
+  --color-error-bg: #FEF2F2;
+  --color-error-border: #FECACA;
+
+  --color-warning: #F59E0B;
+  --color-warning-bg: #FFFBEB;
+  --color-warning-border: #FED7AA;
+
+  --color-info: #3B82F6;
+  --color-info-bg: #EFF6FF;
+  --color-info-border: #BFDBFE;
+
+  /* Text Colors */
+  --color-text-primary: #0F172A;
+  --color-text-secondary: #475569;
+  --color-text-muted: #64748B;
+  --color-text-disabled: #94A3B8;
+  --color-text-inverse: #FFFFFF;
+  --color-text-link: #7B5A7D;
+  --color-text-link-hover: #5D445F;
+
+  /* Background Colors */
+  --color-bg-primary: #FAF8F6;      /* Cream */
+  --color-bg-secondary: #F8FAFC;    /* Light neutral */
+  --color-bg-tertiary: #E8EFE7;     /* Sage pale */
+  --color-bg-elevated: #FFFFFF;      /* White for cards */
+  --color-bg-overlay: rgba(15, 23, 42, 0.5);
+
+  /* Border Colors */
+  --color-border-light: #E2E8F0;
+  --color-border-medium: #CBD5E1;
+  --color-border-dark: #94A3B8;
+  --color-border-focus: #7B5A7D;
+
+  /* ========================================
+     TYPOGRAPHY TOKENS
+     ======================================== */
+
+  /* Font Families */
+  --font-heading: 'Outfit', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-accent: 'Georgia', 'Times New Roman', serif;
+  --font-mono: 'Fira Code', 'Courier New', monospace;
+
+  /* Font Sizes (rem-based, 16px root) */
+  --font-size-xs: 0.75rem;      /* 12px */
+  --font-size-sm: 0.875rem;     /* 14px */
+  --font-size-base: 1rem;       /* 16px */
+  --font-size-lg: 1.125rem;     /* 18px */
+  --font-size-xl: 1.25rem;      /* 20px */
+  --font-size-2xl: 1.5rem;      /* 24px */
+  --font-size-3xl: 1.875rem;    /* 30px */
+  --font-size-4xl: 2.25rem;     /* 36px */
+  --font-size-5xl: 3rem;        /* 48px */
+  --font-size-6xl: 3.75rem;     /* 60px */
+
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Line Heights */
+  --line-height-none: 1;
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+
+  /* Letter Spacing */
+  --letter-spacing-tighter: -0.05em;
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+  --letter-spacing-widest: 0.1em;
+
+  /* ========================================
+     SPACING SCALE (4px base)
+     ======================================== */
+
+  --space-0: 0;
+  --space-1: 0.25rem;       /* 4px */
+  --space-2: 0.5rem;        /* 8px */
+  --space-3: 0.75rem;       /* 12px */
+  --space-4: 1rem;          /* 16px */
+  --space-5: 1.25rem;       /* 20px */
+  --space-6: 1.5rem;        /* 24px */
+  --space-8: 2rem;          /* 32px */
+  --space-10: 2.5rem;       /* 40px */
+  --space-12: 3rem;         /* 48px */
+  --space-16: 4rem;         /* 64px */
+  --space-20: 5rem;         /* 80px */
+  --space-24: 6rem;         /* 96px */
+  --space-32: 8rem;         /* 128px */
+
+  /* ========================================
+     BORDER RADIUS
+     ======================================== */
+
+  --radius-none: 0;
+  --radius-sm: 0.25rem;         /* 4px */
+  --radius-base: 0.5rem;        /* 8px */
+  --radius-md: 0.75rem;         /* 12px */
+  --radius-lg: 1rem;            /* 16px */
+  --radius-xl: 1.5rem;          /* 24px */
+  --radius-2xl: 2rem;           /* 32px */
+  --radius-full: 9999px;
+
+  /* ========================================
+     SHADOWS
+     ======================================== */
+
+  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.1),
+               0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-base: 0 4px 6px rgba(15, 23, 42, 0.1),
+                 0 2px 4px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 10px 15px rgba(15, 23, 42, 0.1),
+               0 4px 6px rgba(15, 23, 42, 0.05);
+  --shadow-lg: 0 20px 25px rgba(15, 23, 42, 0.1),
+               0 10px 10px rgba(15, 23, 42, 0.04);
+  --shadow-xl: 0 25px 50px rgba(15, 23, 42, 0.15),
+               0 12px 24px rgba(15, 23, 42, 0.08);
+  --shadow-2xl: 0 50px 100px rgba(15, 23, 42, 0.25);
+
+  /* Focus Shadow */
+  --shadow-focus: 0 0 0 3px rgba(123, 90, 125, 0.2);
+  --shadow-focus-error: 0 0 0 3px rgba(239, 68, 68, 0.2);
+
+  /* ========================================
+     TRANSITIONS
+     ======================================== */
+
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 350ms ease;
+  --transition-slowest: 500ms ease;
+
+  /* Easing Functions */
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  /* ========================================
+     Z-INDEX SCALE
+     ======================================== */
+
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal-backdrop: 400;
+  --z-modal: 500;
+  --z-popover: 600;
+  --z-tooltip: 700;
+  --z-notification: 800;
+
+  /* ========================================
+     BREAKPOINTS
+     ======================================== */
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  /* ========================================
+     CONTAINER WIDTHS
+     ======================================== */
+
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1536px;
+
+  /* ========================================
+     COMPONENT-SPECIFIC TOKENS
+     ======================================== */
+
+  /* Button Sizes */
+  --btn-padding-sm: var(--space-1) var(--space-3);
+  --btn-padding-base: var(--space-2) var(--space-4);
+  --btn-padding-lg: var(--space-3) var(--space-6);
+  --btn-padding-xl: var(--space-4) var(--space-8);
+
+  /* Input Sizes */
+  --input-padding-sm: var(--space-2) var(--space-3);
+  --input-padding-base: var(--space-3) var(--space-4);
+  --input-padding-lg: var(--space-4) var(--space-6);
+
+  /* Card Spacing */
+  --card-padding-sm: var(--space-4);
+  --card-padding-base: var(--space-6);
+  --card-padding-lg: var(--space-8);
+
+  /* Icon Sizes */
+  --icon-xs: 1rem;      /* 16px */
+  --icon-sm: 1.25rem;   /* 20px */
+  --icon-base: 1.5rem;  /* 24px */
+  --icon-lg: 2rem;      /* 32px */
+  --icon-xl: 2.5rem;    /* 40px */
+  --icon-2xl: 3rem;     /* 48px */
+
+  /* Avatar Sizes */
+  --avatar-xs: 1.5rem;  /* 24px */
+  --avatar-sm: 2rem;    /* 32px */
+  --avatar-base: 2.5rem; /* 40px */
+  --avatar-lg: 3rem;    /* 48px */
+  --avatar-xl: 4rem;    /* 64px */
+  --avatar-2xl: 6rem;   /* 96px */
+}
+
+/* ========================================
+   DARK MODE TOKENS (Optional)
+   ======================================== */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Override tokens for dark mode if needed */
+    /* Currently forcing light mode only per meta tag */
+  }
+}
+
+/* ========================================
+   BASE STYLES USING TOKENS
+   ======================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--font-size-5xl);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+h2 {
+  font-size: var(--font-size-4xl);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+h3 {
+  font-size: var(--font-size-3xl);
+}
+
+h4 {
+  font-size: var(--font-size-2xl);
+}
+
+h5 {
+  font-size: var(--font-size-xl);
+}
+
+h6 {
+  font-size: var(--font-size-lg);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--color-text-link);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-text-link-hover);
+}
+
+a:focus {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* ========================================
+   RESPONSIVE TYPOGRAPHY
+   ======================================== */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: var(--font-size-6xl);
+  }
+
+  h2 {
+    font-size: var(--font-size-5xl);
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY HELPERS
+   ======================================== */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.focus-visible:focus {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+}
+
+/* Skip to main content link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-primary);
+  color: white;
+  padding: var(--space-2) var(--space-4);
+  text-decoration: none;
+  z-index: var(--z-notification);
+}
+
+.skip-link:focus {
+  top: 0;
+}
