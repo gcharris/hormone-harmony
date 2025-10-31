@@ -1,0 +1,8 @@
+[build]
+  publish = "dist"
+
+# For client-side routing (if you add more pages later)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
