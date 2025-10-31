@@ -3,10 +3,10 @@
 
 # Node
 node_modules/
-patch-site/node_modules/
+hormone-harmony/node_modules/
 
 # Vite build output
-patch-site/dist/
+hormone-harmony/dist/
 
 # Logs
 npm-debug.log*
