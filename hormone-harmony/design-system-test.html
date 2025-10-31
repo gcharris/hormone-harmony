@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design System Test — Hormone Harmony</title>
+    <link rel="stylesheet" href="./styles/components.css" />
+    <style>
+      body { padding: var(--space-12); }
+      .swatch { width: 64px; height: 40px; border-radius: var(--radius-sm); border: 1px solid var(--color-border); }
+      .row { display: flex; gap: var(--space-6); align-items: center; flex-wrap: wrap; }
+      .col { display: flex; flex-direction: column; gap: 0.5rem; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="section">
+        <div class="col">
+          <div class="h1">Headings (Outfit)</div>
+          <div class="h2">H2 — Warm, approachable</div>
+          <div class="h3">H3 — Clear and supportive</div>
+          <p>Body (Inter) — Evidence-based guidance and support for every stage of your hormonal journey.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="h2">Color Palette</div>
+        <div class="row">
+          <div class="col"><div class="swatch" style="background: var(--color-sage);"></div><small>#8BA888</small></div>
+          <div class="col"><div class="swatch" style="background: var(--color-coral);"></div><small>#E8A598</small></div>
+          <div class="col"><div class="swatch" style="background: var(--color-plum);"></div><small>#7B5A7D</small></div>
+          <div class="col"><div class="swatch" style="background: var(--color-charcoal);"></div><small>#0F172A</small></div>
+          <div class="col"><div class="swatch" style="background: var(--color-cream);"></div><small>#F8FAFC</small></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="h2">Buttons</div>
+        <div class="row">
+          <button class="btn btn-primary">Primary</button>
+          <button class="btn btn-secondary">Secondary</button>
+          <button class="btn btn-outline">Outline</button>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="h2">Forms</div>
+        <div class="row" style="gap: 2rem; align-items: flex-start;">
+          <label class="label col" style="min-width: 260px;">
+            Email
+            <input class="input" type="email" placeholder="you@example.com" />
+          </label>
+          <label class="label col" style="min-width: 260px;">
+            Topic
+            <select class="select">
+              <option>General</option>
+              <option>Support</option>
+              <option>Partnership</option>
+            </select>
+          </label>
+          <label class="label col" style="min-width: 320px;">
+            Message
+            <textarea class="textarea" rows="3" placeholder="Your message..."></textarea>
+          </label>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="h2">Cards</div>
+        <div class="grid-3">
+          <div class="card">
+            <div class="badge badge-primary">Badge</div>
+            <div class="h3" style="margin-top: 0.5rem;">Feature Card</div>
+            <p style="margin-top: 0.5rem;">Clear, friendly component surface with subtle hover elevation.</p>
+            <a class="link" href="#">Learn more</a>
+          </div>
+          <div class="card">
+            <div class="badge badge-accent">Privacy</div>
+            <div class="h3" style="margin-top: 0.5rem;">Privacy-First</div>
+            <p style="margin-top: 0.5rem;">Your data is encrypted and never sold. You are in control.</p>
+            <a class="link" href="#">Read policy</a>
+          </div>
+          <div class="card">
+            <div class="badge badge-primary">Evidence</div>
+            <div class="h3" style="margin-top: 0.5rem;">Science-Backed</div>
+            <p style="margin-top: 0.5rem;">Every recommendation backed by guidelines and research.</p>
+            <a class="link" href="#">See sources</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
