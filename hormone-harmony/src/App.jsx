@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Button from './components/Button';
 import SplashGate from './components/SplashGate';
 import { Zap, Frown, Moon, Scale, Calendar, CloudFog, Heart, Droplets } from 'lucide-react';
@@ -222,12 +222,21 @@ function FooterLink({ href, children }) {
 function App() {
   const [isUnlocked, setIsUnlocked] = useState(false);
 
+  // Check localStorage on mount to see if user has already unlocked
+  useEffect(() => {
+    const savedUnlock = localStorage.getItem('hormoneHarmonyUnlocked');
+    if (savedUnlock === 'true') {
+      setIsUnlocked(true);
+    }
+  }, []);
+
   const smoothScrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
 
   const handleUnlock = () => {
     setIsUnlocked(true);
+    localStorage.setItem('hormoneHarmonyUnlocked', 'true');
   };
 
   // Show password gate if not unlocked
@@ -364,8 +373,8 @@ function App() {
             <div className="flex justify-center lg:justify-end">
               <div className="relative w-full max-w-lg">
                 <img
-                  src="/photos/hero-patch-model.png"
-                  alt="Woman confidently wearing Hormone Harmony patch"
+                  src="/photos/before-after-transformation.png"
+                  alt="From struggle to empowerment - visual story of hormone balance transformation"
                   className="w-full h-auto rounded-2xl shadow-2xl"
                   style={{
                     objectFit: 'cover',
@@ -465,6 +474,19 @@ function App() {
 
               {/* Skin Changes */}
               <SymptomIcon icon={Droplets} label="Skin Changes" bgColor="var(--color-secondary-pale)" />
+            </div>
+
+            {/* Support & Understanding Image */}
+            <div className="max-w-4xl mx-auto mt-16">
+              <img
+                src="/photos/Clinical Impact Scene.png"
+                alt="You're not alone - supportive healthcare and understanding for hormone health"
+                className="w-full h-auto rounded-2xl shadow-xl"
+                style={{
+                  objectFit: 'cover',
+                }}
+                loading="lazy"
+              />
             </div>
           </div>
         </section>
@@ -575,14 +597,14 @@ function App() {
                 />
               </div>
 
-              {/* Product in Context */}
-              <div className="flex justify-center">
+              {/* Wellness Ecosystem Image */}
+              <div className="flex justify-center mt-12">
                 <img
-                  src="/photos/Patch In Hand.png"
-                  alt="Hormone Harmony patch held in hand - easy to use wearable device"
-                  className="w-full max-w-md h-auto rounded-2xl shadow-xl"
+                  src="/photos/flatlay-ecosystem.png"
+                  alt="Complete wellness ecosystem - Hormone Harmony patch integrated with health tracking app, wellness journal, and daily routines"
+                  className="w-full max-w-4xl h-auto rounded-2xl shadow-xl"
                   style={{
-                    objectFit: 'contain',
+                    objectFit: 'cover',
                   }}
                   loading="lazy"
                 />
@@ -636,11 +658,24 @@ function App() {
               />
             </div>
 
+            {/* Precision Medicine Visualization */}
+            <div className="max-w-3xl mx-auto mt-16 mb-16">
+              <img
+                src="/photos/data-driven-precision.png"
+                alt="Precision medicine - your body, your data, your control with Hormone Harmony"
+                className="w-full h-auto rounded-2xl shadow-2xl"
+                style={{
+                  objectFit: 'cover',
+                }}
+                loading="lazy"
+              />
+            </div>
+
             {/* Founder Credibility - Real Person Behind the Product */}
             <div className="max-w-3xl mx-auto mt-12 grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <img
-                  src="/photos/Josie with patch.png"
+                  src="/photos/Josie with patch forearm.png"
                   alt="Josie, Hormone Harmony founder, wearing the patch"
                   className="w-full h-auto rounded-2xl shadow-lg"
                   style={{

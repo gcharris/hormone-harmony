@@ -13,6 +13,8 @@ function SplashGate({ onSuccess, logoSrc }) {
     if (password.trim() === PASSWORD) {
       setError('')
       setPassword('')
+      // Save to localStorage so user doesn't have to enter password again
+      localStorage.setItem('hormoneHarmonyUnlocked', 'true')
       if (typeof onSuccess === 'function') {
         onSuccess()
       }

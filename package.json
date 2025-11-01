@@ -8,9 +8,15 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate-image": "node generate-image.js",
+    "generate-image:interactive": "node generate-image.js --interactive",
+    "generate-image:hero": "node generate-image.js --template hero",
+    "generate-image:support": "node generate-image.js --template support"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "dotenv": "^16.4.7",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },

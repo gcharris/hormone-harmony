@@ -14,4 +14,14 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# Environment variables (NEVER commit API keys!)
+.env
+.env.local
+.env.*.local
+
+# Generated images (optional)
+generated-images/
+
+# Skill backups - exclude large notebooklm.zip with Python venv
+hormone-harmony/original materials/skill develoment documentation/notebooklm.zip
 
