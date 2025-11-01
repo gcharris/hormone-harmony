@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import founderBackground from '../../photos/Josie with patch forearm.png'
 
-const PASSWORD = 'RithmVision2025'
+const PASSWORD = 'Josephine'
 
 function SplashGate({ onSuccess, logoSrc }) {
   const [password, setPassword] = useState('')
@@ -41,16 +41,16 @@ function SplashGate({ onSuccess, logoSrc }) {
           <div className="flex h-full w-full max-w-[520px] flex-col justify-between rounded-[20px] bg-[rgba(80,74,58,0.88)] px-12 py-14 text-white shadow-[0_28px_85px_rgba(80,74,58,0.32)] backdrop-blur lg:h-[82vh]">
             <div>
               <div className="flex flex-col items-center text-center">
-                <img src={logoSrc} alt="Pico Molecular logo" className="mb-6 h-auto w-[80px]" />
+                <img src={logoSrc} alt="Hormone Harmony logo" className="mb-6 h-auto w-[80px]" />
                 <h1 className="text-[28px] font-semibold uppercase tracking-[0.16em] text-white">
-                  WELCOME TO THE VISION
+                  WELCOME TO HORMONE HARMONY
                 </h1>
               </div>
 
               <div className="mt-6 space-y-4 text-[18px] text-white/100 [line-height:1.65]">
-                <p>Hey—glad you&apos;re here. This is a peek at what Pico Molecular could grow into.</p>
-                <p>Everything inside is aspirational—the science, the partnerships, the wins we&apos;re working toward.</p>
-                <p>Step in as a trusted friend, keep the dream close, and enjoy the tour. ✨</p>
+                <p>Hey—glad you&apos;re here. This is a preview of what Hormone Harmony is building.</p>
+                <p>Everything inside is our vision—the platform, the science, the support we&apos;re creating for women.</p>
+                <p>Enter as a trusted investor, explore the possibilities, and see where we&apos;re headed. ✨</p>
               </div>
             </div>
 
@@ -107,7 +107,7 @@ function SplashGate({ onSuccess, logoSrc }) {
               ) : null}
 
               <p className="mt-6 text-center text-[12px] italic text-white/90">
-                *Not FDA-approved. Just a prototype concept.*
+                *Investor preview. Platform in development.*
               </p>
             </div>
           </div>
